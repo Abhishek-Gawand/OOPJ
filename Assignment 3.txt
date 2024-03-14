@@ -1,0 +1,65 @@
+1) Write a program that demonstrates widening conversion from int to double and prints the result.
+=
+class Widening1{
+public static void main(String [] args){
+
+int a = 2147;
+
+double b = a;
+
+System.out.println("Double:: "+b);
+
+}
+}
+
+2) Create a program that demonstrates narrowing conversion from double to int and prints the result.
+=
+class Narrowing{
+public static void main(String [] args){
+
+double a = 234.45d;
+
+int b = (int) a;
+
+System.out.println("Integer Number:: "+b);
+
+}
+}
+
+3) Write a program that performs arithmetic operations involving different data types (int, double, float)
+and observes how Java handles widening conversions automatically.
+= 
+class Widening2{
+public static void main(String [] args){
+
+int a = 211;
+float b = 131.04f;
+double c = 345.07d;
+double result;
+
+result = a + b + c;
+System.out.println("Addition of 3 numbers is: "+result);
+
+}
+}
+
+4) Write a Program that demonstrates widening conversion from int to (double,float, boolean, string) and
+prints the result.
+=
+class Widening3{
+public static void main(String [] args){
+
+int a = 100;
+float b = a;
+double c = a;	
+boolean d = (a != 0);
+String e = String.valueOf(a);
+
+System.out.println("Float value :: "+b);
+System.out.println("Double value is :: "+c);
+System.out.println("Boolean value is :: "+d);
+System.out.println("Strng value is :: "+e);
+
+}
+}
+
