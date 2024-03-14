@@ -1,0 +1,163 @@
+1)Write a program that takes a numerical grade as input and outputs the corresponding letter
+grade using if-else statements.
+=
+import java.util.Scanner;
+class Marks {
+public static void main(String [] args){
+    
+    Scanner input= new Scanner(System.in);
+    int marks;
+    System.out.println("Enter marks:");
+    marks=input.nextInt();
+
+    if(marks>=70 && marks<100)
+    {
+     System.out.println("Grade of student: A");
+     } 
+    else if(marks>60 && marks<70 )
+    {
+    System.out.println("Grade of student: B");
+     }
+    else if(marks>50 && marks<60)
+    {
+     System.out.println("Grade of student: C");
+     }
+    else if(marks>40 && marks<50)
+    {
+     System.out.println("Grade of student: D");
+     }
+    else
+    {
+     System.out.println("Grade of student: Fail");
+     }
+
+
+}
+}
+
+
+
+2)Write a program that checks if a given year is a leap year or not using both if-else and
+switch-case.
+=
+import java.util.Scanner;
+class LeapYear{
+public static void main(String [] args){
+Scanner input = new Scanner (System.in);
+System.out.println("Enter a year");
+int year = input.nextInt();
+
+if ((year%4==0 && year%100!=0) || (year%400==0))
+{
+System.out.println("It is leap year");
+}
+else
+{
+System.out.println("It is not leap year");
+}
+}
+}
+
+
+
+3)Implement a simple calculator program that takes two numbers and an operator (+, -, *, /) as
+input and performs the operation using switch-case.
+=
+import java.util.Scanner;
+
+class Calculator{
+public static void main(String args[]){
+Scanner input = new Scanner(System.in);
+
+System.out.println("Enter a first number:");
+int num1 = input.nextInt();
+
+System.out.println("Enter a second number:");
+int num2 = input.nextInt();
+
+System.out.println("Enter a operator:");
+char operator = input.next().charAt(0);
+
+double result=0;
+
+switch(operator)
+{
+case '+': result=num1+num2;
+         System.out.println("Addition of 2 numbers is: result");
+         break;
+case '-': result=num1-num2;
+         System.out.println("Subtraction of 2 numbers is: result");
+         break;
+case'*': result=num1*num2;
+         System.out.println("Multiplication of 2 numbers is: result");
+         break;
+case'/': result=num1/num2;
+         System.out.println("Division of 2 numbers is: result");
+         break;
+default: System.out.println("Enter correct operator");
+}
+}
+}
+
+
+
+4)Write a program that takes a number representing a weekday (1-7) and prints the name of the
+weekday using switch-case.
+=
+import java.util.Scanner;
+class Weekday{
+  public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter number of day betwee 1 to 7:");
+        int day = in.nextInt();
+        
+        switch (day)
+        {
+            case 1:System.out.println("Monday");
+            break;
+            case 2:System.out.println("Tuesday");
+            break;
+            case 3:System.out.println("Wednesday");
+            break;
+            case 4:System.out.println("Thursday");
+            break;
+            case 5:System.out.println("Friday");
+            break;
+            case 6:System.out.println("Saturday");
+            break;
+            case 7:System.out.println("Sunday");
+            break;
+            default:System.out.println("Enter number between 1 to 7");
+            
+        }
+        
+    }
+}
+
+5)Write a program that takes a character as input and determines whether it’s a vowel or a
+consonant using if-else.
+= 
+import java.util.Scanner;
+
+class VowelConsonant{
+
+public static void main(String args[]){
+
+Scanner input = new Scanner(System.in);
+
+System.out.println("Enter a letter in capital i.e. A,B,C,D :");
+
+char ch = input.next().charAt(0);
+
+if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+{
+System.out.println("It is vowel");}
+else
+{
+System.out.println("It is consonant");
+}
+
+  }
+}
+
