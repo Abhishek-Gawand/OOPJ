@@ -1,0 +1,100 @@
+1) Build a class Student which contains details about the Student and compile and run its
+instance.
+=
+class Student{
+
+String name;
+int rno;
+int marks;
+
+void show()
+{
+	name = "Abhishek";
+        rno = 34;
+        marks = 95;
+}
+
+public static void main(String [] args){	
+Student std = new Student();
+std.show();
+
+System.out.println("Name of the Student : "+ std.name);
+System.out.println("Roll No of Student : "+ std.rno);
+System.out.println("Marks of the Student : "+ std.marks);
+
+
+}
+}
+
+
+2)Write a Vehicle class with overloaded methods that have a different number of parameters.
+Demonstrate calling these overloaded methods with various numbers of arguments.
+=
+class Vehicle{
+
+void show(String model)
+{
+System.out.println("Model of car : "+model);
+
+}
+
+void show(String model, String color)
+{
+System.out.println("Model of car : "+model);
+System.out.println("Color of car : "+color);
+}
+
+void show(String model, String color, int price)
+{
+System.out.println("Model of car : "+model);
+System.out.println("Color of car : "+color);
+System.out.println("Price of car : "+price);
+}
+
+public static void main(String [] args){
+
+Vehicle vh = new Vehicle();
+vh.show("Honda");
+vh.show("Honda","Black");
+vh.show("Honda","Black",20000);
+
+}
+}
+
+
+3)Create a class Employee with multiple overloaded methods that have different parameter types (e.g.,
+int, double, String). Demonstrate calling each overloaded method with appropriate arguments.
+=
+class Employee{
+
+void emp(String name, int empid, float salary)
+{
+System.out.println("Employee name : "+name);
+System.out.println("Employee id : "+empid);
+System.out.println("Employee salary : "+salary);
+}
+
+void emp(int empid, String name, int salary)
+{
+System.out.println("Employee id : "+empid);
+System.out.println("Employee name : "+name);
+System.out.println("Employee salary : "+salary);
+}
+
+void emp(float salary,String name, float empid)
+{
+System.out.println("Employee salary : "+salary);
+System.out.println("Employee name : "+name);
+System.out.println("Employee id : "+empid);
+}
+
+public static void main(String [] args){
+
+Employee em = new Employee();
+
+em.emp("Anuj", 1221, 20000);
+em.emp(3212, "Amit", 22000);
+em.emp(25000, "Raj", 1123);
+
+}
+}
